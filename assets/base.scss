@@ -1,0 +1,49 @@
+
+$primary-color: #262626;
+$secondary-color: #d1d1d1;
+$active-color: #0d96ff;
+$main:white;
+$comment-color:#666;
+
+.btn{
+    background: $primary-color;
+    color: white;
+    border:none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100px;
+    height: 50px;
+    &:hover{
+        background: $active-color;
+    }
+}
+.border {
+    border-color: $secondary-color;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.activeShadow{
+    border-color: $active-color;
+    box-shadow: 0 0 10px 0px $active-color;
+}
+
+.activeBackground{
+    background-color: $active-color;
+}
+
+.font{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    color: $primary-color;
+}
+
