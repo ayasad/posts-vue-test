@@ -39,8 +39,7 @@ export const useStore = defineStore('store', () => {
     }
   }
 
-  const changeActivePost = (id) => {
-    console.log('AAAA')
+  const changeActivePost = (id) => {  
      Object.values (posts.value).forEach((p) => {
       if (p.id === id) {
         p.active = !p.active;
@@ -50,7 +49,7 @@ export const useStore = defineStore('store', () => {
 
   const postComment = ( comment,id) => {
     console.log(comment)
-    const index = posts.value.findIndex((p) => p.id === id)
+    const index = Object.values(posts.value).findIndex((p) => p.id === id)
     posts.value[index].comments = [{email:'You',body:comment},...posts.value[index].comments]
   }
 

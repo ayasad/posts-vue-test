@@ -7,7 +7,7 @@
       <h1>Posts of user : {{ store.filter }}</h1>
       <button class="close-button" @click="noFilter"></button>
     </div>
-    <div class="filters">
+    <div class="filters" v-if="!store.loading && store.filter=='' " >
       <button @click="store.showAllPosts" class="btn">Все</button>
       <button @click="store.sortByAlphabet" class="btn">Сортировать по алфавиту</button>     
     </div>

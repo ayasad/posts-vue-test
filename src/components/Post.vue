@@ -54,19 +54,19 @@ const showComments = (id) => {
     max-width: 100%;
 
     
-    &_user{
+    .post_user{
         display: flex;
         gap:10px;
         align-items: center;
         margin: 5px 0;
         padding-bottom: 8px;
-       &_user-avatar{
+        .post_user-avatar{
             width: 50px;
             height: 50px;
             border-radius: 50%;
             background: $main;
         }
-       &_user-info{
+        .post_user-info{
             display: flex;
             flex-direction: column;
             gap: 2px;
@@ -74,7 +74,7 @@ const showComments = (id) => {
                 font-size: 16px;
             }
 
-            &_user-info-name{
+            .post_user-info-name{
                 font-size: 14px;
                 color:$secondary-color;
             }
@@ -88,11 +88,11 @@ const showComments = (id) => {
         padding: 10px;
         border-top: solid 2px rgba($main,0.2);
         border-bottom: solid 2px rgba($main,0.2);
-       &_content-title{
+        .post_content-title{
             font-size: 22px;
             font-weight: bold;
         }
-      &_content-body{
+        .post_content-body{
             font-size: 18px;
             line-height: 1.5;
         }
